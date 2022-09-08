@@ -49,6 +49,7 @@ modules:
       buildpack: nodejs_buildpack
       memory: 512M
       disk-quota: 1024M
+    properties:
     requires:
       - name: appCICD-uaa
       - name: appCICD-dest
@@ -119,15 +120,15 @@ resources:
 
 
 
-  # ------------------- HDI CONTAINER SERVICE ------------------
-  - name: appCICD-db
-  # ------------------------------------------------------------
-    type: com.sap.xs.hdi-container
-    parameters:
-      service: hana
-      service-plan: hdi-shared
-    properties:
-      hdi-service-name: ${service-name}
+  # # ------------------- HDI CONTAINER SERVICE ------------------
+  # - name: appCICD-db
+  # # ------------------------------------------------------------
+  #   type: com.sap.xs.hdi-container
+  #   parameters:
+  #     service: hana
+  #     service-plan: hdi-shared
+  #   properties:
+  #     hdi-service-name: ${service-name}
 
 
 
