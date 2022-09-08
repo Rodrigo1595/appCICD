@@ -49,7 +49,6 @@ modules:
       buildpack: nodejs_buildpack
       memory: 512M
       disk-quota: 1024M
-    properties:
     requires:
       - name: appCICD-uaa
       - name: appCICD-dest
