@@ -121,9 +121,9 @@ resources:
   - name: appCICD-db
   # ------------------------------------------------------------
     type: com.sap.xs.hdi-container
-    parameters:
-      service: hana
-      service-plan: hdi-shared
+    # parameters:
+    #   service: hana
+    #   service-plan: hdi-shared
     properties:
       hdi-service-name: ${service-name}
 
